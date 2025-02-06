@@ -15,7 +15,6 @@ Record the learning route of algorithm problem, improve the efficiency of machin
 ---
 
 ## 2 Data Range Analysis
-sdfd
 
 Based on the complexity and algorithm content of the data range inverse calculation method, the time limit for ACM or pen test questions is generally 1~2 seconds.
 
