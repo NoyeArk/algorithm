@@ -1,8 +1,8 @@
-# Algorithm Learning
+# 机试学习
 
-Record the learning route of algorithm problem, improve the efficiency of machine testing learning, and continuously enhance the ability of machine testing code.
+记录算法问题的学习路线，提高机试学习效率，持续提升机试代码能力。
 
-## 1 Knowledge
+## 1 知识点概览
 
 ![](algorithm/image/knowledge.png)
 
@@ -11,12 +11,13 @@ Record the learning route of algorithm problem, improve the efficiency of machin
 | Array | [dichotomy](algorithm/1-Array/dichotomy.md) |
 | Basic Algorithm | [double pointer](algorithm/双指针.md)、[difference](algorithm/差分.md)、[sliding window](algorithm/滑动窗口.md)、[monotone stack](algorithm/单调栈.md) |
 | Data Structure | [segment tree](algorithm/线段树.md) |
+| Dynamic Programming | [dp](algorithm/dp.md) |
 
 ---
 
-## 2 Data Range Analysis
+## 2 数据范围分析
 
-Based on the complexity and algorithm content of the data range inverse calculation method, the time limit for ACM or pen test questions is generally 1~2 seconds.
+根据数据范围的复杂度和算法内容，ACM或笔试题的时间限制一般为1~2秒。
 
 在这种情况下，C++代码中的操作次数控制在 $10^7~10^8$ 为最佳。下面给出在不同数据范围下，代码的时间复杂度和算法该如何选择：
 
@@ -36,9 +37,9 @@ Based on the complexity and algorithm content of the data range inverse calculat
 
 ---
 
-## 3 Record
+## 3 刷题记录
 
-| ID | Platform | 题单名称 | State | Complete Time |
+| ID | 平台 | 题单名称 | 状态 | 完成时间 |
 |--| ---- | ------ | ----  | ------ |
 |1|[Acwing](acwing/Readme.md)|[算法基础课](acwing/1-算法基础课/)| Ongoing | |
 |2|[Acwing](acwing/Readme.md)|[蓝桥杯每日一题](acwing/2-蓝桥杯每日一题/)| Ongoing | |
