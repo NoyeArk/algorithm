@@ -8,10 +8,10 @@
 
 | Type | Knowledge | 
 | - | ------- |
-| Array | [dichotomy](algorithm/1-Array/dichotomy.md) |
-| Basic Algorithm | [double pointer](algorithm/双指针.md)、[difference](algorithm/差分.md)、[sliding window](algorithm/滑动窗口.md)、[monotone stack](algorithm/单调栈.md) |
-| Data Structure | [segment tree](algorithm/线段树.md) |
-| Dynamic Programming | [dp](algorithm/dp.md) |
+| 数组 | [dichotomy](algorithm/1-Array/dichotomy.md) |
+| 基础算法 | [双指针](algorithm/双指针.md)、[差分](algorithm/差分.md)、[滑动窗口](algorithm/滑动窗口.md)、[单调栈](algorithm/单调栈.md) |
+| 数据结构 | [线段树](algorithm/线段树.md) |
+| 动态规划 | [dp](algorithm/dp.md) |
 
 ---
 
