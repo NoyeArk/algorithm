@@ -8,10 +8,9 @@
 
 | Type | Knowledge | 
 | - | ------- |
-| 数组 | [dichotomy](algorithm/1-Array/dichotomy.md) |
-| 基础算法 | [双指针](algorithm/双指针.md)、[差分](algorithm/差分.md)、[滑动窗口](algorithm/滑动窗口.md)、[单调栈](algorithm/单调栈.md) |
-| 数据结构 | [线段树](algorithm/线段树.md) |
-| 动态规划 | [dp](algorithm/dp.md) |
+| 基础算法 | [双指针](algorithm/基础算法/双指针.md)、[差分](algorithm/基础算法/差分.md)、[滑动窗口](algorithm/基础算法/滑动窗口.md)、[单调栈](algorithm/基础算法/单调栈.md)、[二分](algorithm/基础算法/二分算法.md)|
+| 数据结构 | [线段树](algorithm/数据结构/线段树.md) |
+| 动态规划 | [动态规划](algorithm/动态规划.md) |
 
 ---
 
