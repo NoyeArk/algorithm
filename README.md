@@ -9,7 +9,7 @@
 | Type | Knowledge | 
 | - | ------- |
 | 基础算法 | [双指针](algorithm/基础算法/双指针.md)、[差分](algorithm/基础算法/差分.md)、[滑动窗口](algorithm/基础算法/滑动窗口.md)、[二分](algorithm/基础算法/二分算法.md)、[贪心](algorithm/基础算法/贪心.md)|
-| 数据结构 | [线段树](algorithm/数据结构/树形数据结构/线段树.md) 、[单调栈](algorithm/数据结构/基础数据结构/单调栈.md)、[堆](algorithm/数据结构/基础数据结构/堆.md)|
+| 数据结构 | [线段树](algorithm/数据结构/树形数据结构/线段树.md) 、[单调栈](algorithm/数据结构/基础数据结构/单调栈.md)、[堆](algorithm/数据结构/基础数据结构/堆.md)、[Trie树](algorithm/数据结构/树形数据结构/Trie树.md)|
 | 动态规划 | [动态规划](algorithm/动态规划.md) |
 
 ---
