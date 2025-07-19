@@ -30,7 +30,7 @@ class Trie:
             cur = cur[c]
         return True
 
-    def startsWith(self, prefix: str) -> bool:
+    def start_with(self, prefix: str) -> bool:
         cur = self.son
         for c in prefix:
             if c not in cur:
@@ -43,3 +43,4 @@ class Trie:
 
 - [LCR 062. 实现 Trie (前缀树)](/leetcode/8-119经典题变种挑战/挑战%2010：前缀树/LCR%20062.%20实现%20Trie%20(前缀树).md)
 - [LCR 063. 单词替换](/leetcode/8-119经典题变种挑战/挑战%2010：前缀树/LCR%20063.%20单词替换.md)
+- [1233. 删除子文件夹](/leetcode/4-每日一题/1233.%20删除子文件夹.md)
