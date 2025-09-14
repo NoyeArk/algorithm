@@ -52,3 +52,9 @@
 |11|[Nowcoder](nowcoder/Readme.md)|[笔试必刷TOP101](nowcoder/笔试必刷TOP101/)| Ongoing |  |
 |12|[Nowcoder](nowcoder/)|[输入输出练习](nowcoder/输入输出练习/)| Ongoing |  |
 |13|[Leetcode](leetcode/Readme.md)|[高频 SQL 50 题（基础版）](leetcode/10-高频%20SQL%2050%20题（基础版）/)| Ongoing | |
+
+---
+
+## 4 进展记录
+
+1. 2025.09.13：完成「119经典题变种挑战」，之后开始做「面试经典150题」和刷动态规划
