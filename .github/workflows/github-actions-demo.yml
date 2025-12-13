@@ -1,0 +1,32 @@
+name: Wolai Markdown Metadata Sync
+run-name: ${{ github.actor }} is syncing Markdown metadata with Wolai 📝
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "🛎️ 检出仓库代码"
+        uses: actions/checkout@v5
+
+      - name: "🐍 安装依赖"
+        run: |
+          pip install wolai
+
+      - name: "🕵️ 检查 Markdown 文件变更"
+        id: changed-files
+        uses: tj-actions/changed-files@v44
+
+      - name: "📄 List all changed files"
+        run: |
+            for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+                echo "文件变更: $file"
+            done
+
+      - name: "📝 Extract Markdown titles from changed files"
+        run: |
+            for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+                if [[ "$file" == *.md ]]; then
+                    echo "处理文件: $file"
+                    python3 scripts/extract_markdown_title.py --token "${{ secrets.WOLAI_API }}" --database_id "${{ secrets.WOLAI_DATABASE_ID }}" "$file"
+                fi
+            done
