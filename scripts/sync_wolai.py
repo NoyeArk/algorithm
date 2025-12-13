@@ -86,6 +86,37 @@ def extract_title(file_path: str) -> str:
         return f"读取文件时出错: {e}"
 
 
+def extract_category(file_path: str) -> str:
+    """
+    从文件路径中提取分类信息
+
+    例如: leetcode/4-每日一题/3606. 优惠券校验器.md
+    提取: 每日一题
+
+    Args:
+        file_path: Markdown 文件路径
+
+    Returns:
+        提取的分类名称，如果无法提取则返回 None
+    """
+    try:
+        # 分割路径
+        path_parts = file_path.split("/")
+
+        # 重点：只从第二个路径部分提取分类（下标1）
+        if len(path_parts) > 1:
+            part = path_parts[1]
+            match = re.match(r"\d+-(.+)", part)
+            if match:
+                category = match.group(1).strip()
+                return category
+
+        # 如果没有找到，返回 None
+        return None
+    except Exception:
+        return None
+
+
 def extract_knowledge_points(file_path: str) -> list:
     """
     从 Markdown 文件的第5行提取知识点
@@ -206,11 +237,16 @@ def main():
         # 提取知识点
         knowledge_points = extract_knowledge_points(decoded_path)
 
+        # 提取分类（如：每日一题）
+        category = extract_category(decoded_path)
+
         platform = decoded_path.split("/")[0]
 
         # 输出解码后的文件路径和标题
         print(f"文件: {decoded_path}")
         print(f"标题: {title}")
+        if category:
+            print(f"分类: {category}")
         if knowledge_points:
             print(f"知识点: {','.join(knowledge_points)}")
         print("-" * 50)
@@ -234,6 +270,7 @@ def main():
                         {
                             "标题": title,
                             "日期": final_date,
+                            "题单": category,
                             "平台": platform,
                             "知识点": knowledge_points,
                         }
